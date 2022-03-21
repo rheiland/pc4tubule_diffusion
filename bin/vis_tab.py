@@ -212,9 +212,9 @@ class Vis(QWidget):
         self.glayout1.addWidget(self.cells_checkbox, 0,5,1,2) # w, row, column, rowspan, colspan
 
         self.substrates_checkbox = QCheckBox('Substrates')
-        self.substrates_checkbox.setChecked(False)
+        self.substrates_checkbox.setChecked(True)
         self.substrates_checkbox.clicked.connect(self.substrates_toggle_cb)
-        self.substrates_checked_flag = False
+        self.substrates_checked_flag = True
         self.glayout1.addWidget(self.substrates_checkbox, 0,7,1,2) # w, row, column, rowspan, colspan
 
         self.fix_cmap_checkbox = QCheckBox('fix')
